@@ -37,8 +37,28 @@ git clone https://github.com/your-username/oxyyauth-backend.git
 cd oxyyauth-backend
 ```
 
+2. Install dependencies:
+
 ```bash
 npm install
 # or
 yarn install
+```
+
+3. Create a .env file based on .env.example with your configuration:
+
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+RESEND_EMAIL=your_email
+CLIENT_URL=http://localhost:5173
+```
+
+4. Start the development server
+
+```bash
+npm run dev
+# or
+yarn dev
 ```
